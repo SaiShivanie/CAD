@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+         <title>Trips and Guides</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/guide_styles.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/nav_footer_style.css') }}">
+        <link rel="icon" href="{{ url_for('static', filename='images/logo.png') }}">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel='stylesheet'>
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="nofollow" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+         <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+         <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body> 
+      
+</div>
+<section class="header1">
+    <nav>
+           <div class="nav-links"id="navLinks">
+                 <ul>
+                    <li><a href="/">HOME</a></li> 
+                       <li><a href="/travel">STORIES</a></li>
+                       <li><a href="/guide">TRIPS&GUIDES</a></li>
+                       <li><a href="/gallery">GALLERY</a></li>
+                       <li><a href="CON.html">CONTACT</a></li>
+                 </ul>
+           </div>
+   </nav>
+</section> 
+<br>
+<br>
+<section>
+    <div>
+        <h2 class="sub-heads" style="font-size: larger;font-weight: bold; text-align: center;">Guides</h2>
+    </div>
+</section>
+
+<section>
+    <div class="container mt-3">
+        <div class="row justify-content-center">
+            <!-- Faculty 1 -->
+            <div class="col-md-3 mb-4 col-sm-12"> 
+                <div class="card img-fluid" style="width:100%">
+                    <a href="/india">
+                        <img class="card-img-top" src="{{ url_for('static', filename='images/india.jpg') }}" alt="Card image" style="width:400px; height:200px">
+                    </a>
+                    <div class="card-img-overlay">
+                        <div class="card-content">
+                            <a href="/india">
+                                <h3 class="card-title">India</h3>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+      
+            <!-- Faculty 2 -->
+            <div class="col-md-3 mb-4 col-sm-12">
+                <div class="card img-fluid" style="width:100%">
+                    <img class="card-img-top" src="{{ url_for('static', filename='images/japan.png') }}" alt="Card image" style="width:400px; height:200px">
+                    <div class="card-img-overlay">
+                        <div class="card-content">
+                            <h3 class="card-title">Japan</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      
+            <!-- Faculty 3 -->
+            <div class="col-md-3 mb-4 col-sm-12">
+                <div class="card img-fluid" style="width:100%">
+                    <img class="card-img-top" src="{{ url_for('static', filename='images/canada.jpg') }}" alt="Card image" style="width:400px; height:200px">
+                    <div class="card-img-overlay">
+                        <div class="card-content">
+                            <h3 class="card-title">Canada</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Faculty 4 -->
+            <div class="col-md-3 mb-4 col-sm-12">
+                <div class="card img-fluid" style="width:100%">
+                    <img class="card-img-top" src="{{ url_for('static', filename='images/paris.jpg') }}" alt="Card image" style="width:400px; height:200px">
+                    <div class="card-img-overlay">
+                        <div class="card-content">
+                            <h3 class="card-title">Paris</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Faculty 5 -->
+            <div class="col-md-3 mb-4 col-sm-12">
+                <div class="card img-fluid" style="width:100%">
+                    <img class="card-img-top" src="{{ url_for('static', filename='images/korea.jpg') }}" alt="Card image" style="width:400px; height:200px">
+                    <div class="card-img-overlay">
+                        <div class="card-content">
+                            <h3 class="card-title">Korea</h3>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Faculty 6 -->
+            <div class="col-md-3 mb-4 col-sm-12">
+                <div class="card img-fluid" style="width:100%">
+                    <img class="card-img-top" src="{{ url_for('static', filename='images/california.png') }}" alt="Card image" style="width:400px; height:200px">
+                    <div class="card-img-overlay">
+                        <div class="card-content">
+                            <h3 class="card-title">California</h3> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                      
+        </div>
+      </div> 
+      
+</section>
+
+<div class="comment-box">
+    <h1 style="font-size: larger;font-weight: bold; text-align: center;">Leave a Comment</h1>
+    {% include "comment.html" %}
+ </div>
+
+
+
+<!--------- Footer ---------->
+
+<section class="footer">
+
+     <h2>Follow on</h2>
+     <div class="icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+</div>
+
+</section>

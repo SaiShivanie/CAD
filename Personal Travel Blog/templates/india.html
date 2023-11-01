@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- <link rel="stylesheet" href="styles.css">-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/guide_styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nav_footer_style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/logo.png') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel='stylesheet'>
+    <script src="{{ url_for('static', filename='js/guide_script.js') }}"></script>
+    <title>Travel Guides</title>
+</head>
+<body onload="showSlides(slideIndex)">
+  <div class="text-container">
+    <div>
+      <h1 class="text">INDIA</h1><br>
+    </div>  
+  </div>
+    <section class="header1">
+        <nav>
+               <div class="nav-links"id="navLinks">
+                     <ul>
+                      <li><a href="/">HOME</a></li> 
+                      <li><a href="/travel">STORIES</a></li>
+                      <li><a href="/guide">TRIPS&GUIDES</a></li>
+                      <li><a href="/gallery">GALLERY</a></li>
+                      <li><a href="CON.html">CONTACT</a></li>
+                     </ul>
+               </div>
+       </nav>
+    </section> 
+    <br>
+    <div>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+       <a href="/taj">
+            <img src="{{ url_for('static', filename='images/taj.jpg') }}" style="width:100%; height:80%;">
+       </a>  
+          
+        </div>
+        <div class="mySlides fade">
+          
+          <img src="{{ url_for('static', filename='images/boating.jpg') }}" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>  
+    </div>    
+    <div class="nav2-back">
+      <nav class="nav2">
+        <ul>
+            <li><a href="#about">About India</a></li>
+            <li><a href="#destinations">Top Destinations</a></li>
+            <li><a href="#culture">Getting Around</a></li>
+            <li><a href="#food">Food</a></li>
+            <li><a href="#tips">Travel Tips</a></li>
+        </ul>
+    </nav>
+    </div>
+  <section id="about">
+      <h2 class="sub-heads">About India</h2>
+      <p class="abt">India, the land of contrasts and cultural diversity, beckons with open arms. 
+        This vibrant country in South Asia is a kaleidoscope of history, traditions, 
+        and awe-inspiring landscapes. From the snow-capped peaks of the Himalayas in 
+        the north to the sun-kissed shores of the south, India's natural beauty is boundless.
+        Immerse yourself in the rich tapestry of India's history as you visit ancient 
+        temples and explore the architectural marvels that tell stories of a bygone era. 
+        Wander through bustling cities where modernity coexists harmoniously with tradition.
+         But what truly defines India is the warmth and hospitality of its people. Come, 
+         discover the essence of India and create memories that last a lifetime</p>
+  </section>
+  <section id="facts">
+    <h2 class="sub-heads">Key Facts</h2>
+    <div class="fact-container">
+      <div class="fact-item">
+        <div class="circle">
+            <i class="fa-solid fa-language"></i>
+        </div>
+        <div class="fact-text">
+            <p>Language</p>
+            <p>{{ key_facts_data[0].get('LANGUAGE') }}</p>
+        </div>
+    </div>
+    <div class="fact-item">
+      <div class="circle">
+          <i class="fa-solid fa-indian-rupee-sign"></i>
+      </div>
+      <div class="fact-text">
+        <p>Currency</p>
+          <p>{{ key_facts_data[0].get('CURRENCY') }}</p>
+      </div>
+  </div>
+  <div class="fact-item">
+    <div class="circle">
+      <i class="fa-solid fa-cloud"></i>
+    </div>
+    <div class="fact-text">
+        <p>Climate</p>
+        <p>{{ key_facts_data[0].get('CLIMATE') }}</p>
+    </div>
+  </div>
+    <div class="fact-item">
+      <div class="circle">
+        <i class="fa-solid fa-building"></i>
+      </div>
+      <div class="fact-text">
+          <p>Capital</p>
+          <p>{{  key_facts_data[0].get('CAPITAL')  }}</p>
+      </div>
+  </div>
+    </div>    
+</section>
+  <section id="destinations">
+      <h2 class="sub-heads">Top Destinations</h2>
+      <div class="dest-img-container">
+        <div class="img-item">
+          <a href="/taj"><img src="{{ url_for('static', filename='images/taj2.jpg') }}" width="400px" height="250px" class="dest-img-style" ></a>
+          <div class="image-text">Agra</div>
+        </div>  
+        <div class="img-item">
+          <a href="#"><img src="{{ url_for('static', filename='images/delhi.jpg') }}" width="400px" height="250px" class="dest-img-style" ></a>
+          <div class="image-text">Delhi</div>
+        </div> 
+        <div class="img-item">
+          <a href="#"><img src="{{ url_for('static', filename='images/kerala.png') }}" width="400px" height="250px" class="dest-img-style" ></a>
+          <div class="image-text">Kerala</div>
+        </div> 
+        <div class="img-item">
+          <a href="#"><img src="{{ url_for('static', filename='images/tn.jpg') }}" width="400px" height="250px" class="dest-img-style" ></a>
+          <div class="image-text">Tamilnadu</div>
+        </div> 
+        <div class="img-item">
+          <a href="#"><img src="{{ url_for('static', filename='images/rajastan.jpg') }}" width="400px" height="250px" class="dest-img-style" ></a>
+          <div class="image-text">Rajastan</div>
+        </div> 
+        <div class="img-item">
+          <a href="#"><img src="{{ url_for('static', filename='images/bihar.png') }}" width="400px" height="250px" class="dest-img-style" ></a>
+          <div class="image-text">Bihar</div>
+        </div> 
+      </div>   
+  </section>
+  <section id="culture">
+      <h2 class="sub-heads">Getting Around</h2>
+      <div class="ga-content">
+        <h4>Buses</h4><br>
+        <p>Buses are extremely popular in India. Both Goibibo and Redbus are the best sites to use for booking buses. 
+          These sites have options ranging from public state transportation to private buses. Prices range from $10-$20 USD, 
+          depending on where you'd like to go.</p>
+      </div>
+      <div class="ga-content">
+        <h4>Trains</h4><br>
+        <p>Trains are another common mode of transportation. You can find information on IRCTC, the government website for the railway system.
+           Sleeper class is always a great option for shorter rides, as tickets start as low as $3 USD.</p>
+      </div>
+      <div class="ga-content">
+        <h4>Cars</h4><br>
+        <p>
+          Ola and Uber work best for internal travel throughout the cities.
+        </p>
+      </div>
+      <div class="ga-content">
+        <h4>Metros</h4><br>
+        <p>
+          Kolkata, Delhi, Chennai, Bengaluru, Hyderabad, Jaipur, Gurgaon, Mumbai, Kochi, and Lucknow have Metro facilitiy to travel within places
+        </p>
+      </div>
+  </section>
+  <section id="food">
+      <h2 class="sub-heads">Food</h2>
+      <div class="food-content">
+        <div class="food-text">
+          <p>
+            India has a diverse culinary heritage, with each region having its own cooking style and specialty dishes.
+             For example, the North is known for hearty meat-based dishes like butter chicken, biryani, and kebabs. 
+             The South is known for its vegetarian fare, including dosas, idlis, and sambar.
+             <br><br>
+             Indian food is distinguished by its use of spices. Different herbs are used to prepare various dishes.
+          </p>
+          <br>
+          <h4>Some Traditional Indian dishes</h4><br>
+          <ul>
+            <li>Masala dosa</li>
+            <li>Chaat</li>
+            <li>Dal Makhani</li>
+            <li>Vada pav</li>
+            <li>Paratha</li>
+            <li>Barfi</li>
+            <li>Pani Puri</li>
+          </ul>
+          <br>
+          <h4>Some of the Snacks and sweets includes</h4><br>
+          <ul>
+            <li>Samosas</li>
+            <li>Pakoras</li>
+            <li>Jalebi</li>
+            <li>Rasagulla</li>
+            <li>Kulfi</li>
+            <li>Gulab Jamun</li>
+            <li>Kaju Katli</li>
+            <li>Laddoo</li>
+          </ul>
+        </div>
+      <img src="{{ url_for('static', filename='images/food.jpg') }}" alt="food" width="500px">  
+      </div>
+  </section>
+  <section id="tips">
+    <h2 class="sub-heads">Travel Tips</h2>
+    <div class="tip-content">
+      <i class="fa-solid fa-check"></i>&nbsp;&nbsp;&nbsp;
+        Planning: Research accommodations, transportation schedules, and local guides.
+    </div>
+    <div class="tip-content">
+      <i class="fa-solid fa-indian-rupee-sign"></i>&nbsp;&nbsp;&nbsp;
+      Budget: India is one of the most affordable countries to visit.
+    </div>
+    <div class="tip-content">
+      <i class="fa-solid fa-suitcase"></i>&nbsp;&nbsp;&nbsp;
+      Packing: Pack items to protect you from the heat or chilly winds in the north.
+    </div>
+    <div class="tip-content">
+      <i class="fa-solid fa-globe"></i>&nbsp;&nbsp;&nbsp;
+      Visa: Nearly all international visitors require a visa. A tourist visa costs about $150 and allows you to stay for up to 180 days.
+    </div>
+    <div class="tip-content">
+      <i class="fa-solid fa-bed"></i>&nbsp;&nbsp;&nbsp;
+      Avoiding burnout: Have realistic expectations about how much you can see.
+    </div>
+    <div class="tip-content">
+      <i class="fa-solid fa-user"></i>&nbsp;&nbsp;&nbsp;
+      Trusting people: Be careful who you trust, especially in the north.
+    </div>
+    <div class="tip-content"> 
+      <i class="fa-solid fa-shirt"></i>&nbsp;&nbsp;&nbsp;
+      Covering up: Dress conservatively.
+    </div> 
+    </ul>
+    </div>    
+</section>
+<div class="comment-box">
+  <h1>Leave a Comment</h1>
+  {% include "comment.html" %}
+</div>
+<section class="footer">
+   <h2>Follow on</h2>
+   <div class="icons">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+</div>
+</section>   
+</body>
+</html>

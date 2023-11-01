@@ -1,0 +1,282 @@
+*{
+  margin:0;
+  padding:0;
+}
+.header{
+       height:800px;
+       width:100%;
+       background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('/static/images/back.jpg');
+       background-position:center;
+       background-size:cover;
+}
+nav{
+    display:flex;
+    padding:2px 6px;
+    justify-content:space-between;
+    align-items:center;
+}
+.nav-links{
+          flex:1;
+          text-align:right;
+}
+.nav-links ul li{
+            list-style:none;
+            display:inline-block;
+            padding:8px 12px;
+            position:relative;
+}
+.nav-links ul li a{
+            color:#fff;
+            text-decoration:none;
+            font-size:13px; 
+            line-height:200%;
+}
+.nav-links ul li::after{
+           content:'';
+           width:0%;
+           height:2px;
+           background:#F8F6F4;
+           display:block;
+           margin:auto;
+           transition:0.3s;
+}
+.nav-links ul li:hover::after{
+             width:100%;
+}
+@media(max-width:700px){
+          .text-box h2{
+             font-size:2px;
+}
+          .nav h1{
+             font-size:2px;
+}
+          .nav-links ul li{
+              display:block;
+}     
+          .nav-links{
+                position:absolute;
+                background:#f44336;
+                height:100vh;
+                width:200px;
+                top:0;
+                right:-200px;
+                text-align:left;
+                z-index:2;
+                transition:1s;
+}
+           .nav-links ul{
+                 padding:30px;
+}
+}
+ 
+.sec{
+       width:80%;
+       margin:auto;
+       text-align:center;
+       padding-top:100px;
+}
+.h1{
+   font-size:36px;
+   font-weight:600;
+}
+.p{
+   color:#777;
+   font-size:14px;
+   font-weight:300;
+   line-height:22px;
+   padding:10px;
+}
+.row{
+     margin-top:5%;
+     display:flex;
+     justify-content:space-between;
+}
+
+.sec-col{
+    flex-basis:31%;
+    background:#E3F4F4;
+    border-radius:10px;
+    margin-bottom:5%;
+    padding:20px 12px;
+    box-sizing:border-box;
+    
+}
+h1{
+   text-align:center;
+   font-weight:600;
+   margin: 10px 0;
+}
+
+.sec-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+@media(max-width: 771px){
+     .row{
+         flex-direction: column;
+     }
+}
+.blog-expect{
+    width: 80%;
+    margin: auto;
+    padding-top:50px;
+    text-align:center;
+}
+.blogex-col{
+    flex-basis: 32%;
+    border-radius:10px;
+    margin-bottom:30px;
+    position:relative;
+    overflow:hidden;
+}
+.blogex-col img{
+    width: 100%;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    transition:0.5s;
+}
+.layer:hover{
+    background-color:rgba(0, 0, 128, 0.5); 
+}
+.layer h4{
+    width:100%;
+    font-weight:500;
+    color:#fff;
+    font-size:26px;
+    bottom:0;
+    left: 50%;
+    transform: translateX(-50%);
+    position:absolute;
+    opacity:0;
+    transition:0.5s;
+}
+.layer:hover h4{
+        bottom:49%;
+        opacity:1;
+}
+.posts{
+   width: 80%;
+   margin: auto;
+   text-align: center;
+   padding-top: 100px;
+}
+.dest-col{
+    flex-basis:31%;
+    border-radius:10px;
+    margin-bottom:5%;
+    text-align:left;
+}
+.dest-col img{
+  width:100%;
+  border-radius:10px;
+  transition: transform 0.3s;
+}
+.dest-col img:hover {
+  transform: scale(1.2);
+}
+.dest-col h5{
+    margin-top:16px;
+    margin-bottom:15px;
+    text-align:left;
+    font-size:20px;
+}
+.testimonials{
+    width:80%;
+    margin:auto;
+    padding-top:20px;
+    text-align:center;
+}
+.testimonial-col{
+     flex-basis:44%;
+     border-radius:10px;
+     margin-bottom:5%;
+     text-align:left;
+     background:#E3F4F4;
+     padding:25px;
+     cursor:pointer;
+     display:flex;
+}
+.testimonial-col img{
+      height:40px;
+      margin-left:5px;
+      margin-right:10px;
+      border-radius:50%;
+}
+.testimonial-col h6{
+      margin-top:15px;
+      text-align:left;
+      font-size:20px;
+}
+.testimonial-col .fa{
+      color:orange;
+}
+@media(max-width:700px){
+      .testimonial-col img{
+          margin-left:0px;
+          margin-right:15px;
+      }
+}
+
+.comment-box {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    font-weight:bold;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.comment {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin:10px 0;
+}
+
+.footer{
+      width:100%;
+      text-align:center;
+      padding:5px 0;
+      background-color: #C4DFDF
+    
+}
+
+.footer h2{
+      margin-bottom:25px;
+      margin-top:20px;
+      font-weight:500;
+      
+}
+.icons .fa{
+       color:black;
+       margin:0 13px;
+       cursor:pointer;
+       padding:10px 25px;
+
+}

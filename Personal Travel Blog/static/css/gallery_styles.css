@@ -1,0 +1,52 @@
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+    flex: 1;
+    margin: 6px;
+    margin-left: 32%;
+    max-width: calc(33.33% - 12px); /* 25% for four items in a row with margins */
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    max-width: calc(50% - 12px);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+

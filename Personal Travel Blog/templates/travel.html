@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/logo.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nav_footer_style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel='stylesheet'>
+</head>
+<body>
+    <section class="header">
+        <nav>
+               <div class="nav-links"id="navLinks">
+                     <ul>
+                        <li><a href="/">HOME</a></li> 
+                       <li><a href="/travel">STORIES</a></li>
+                       <li><a href="/guide">TRIPS&GUIDES</a></li>
+                       <li><a href="/gallery">GALLERY</a></li>
+                       <li><a href="CON.html">CONTACT</a></li>
+                     </ul>
+               </div>
+       </nav>
+    </section>
+    <br><br>
+    <div class="div1d1"><CENTRE><h1>TRAVEL STORIES<br></h1></CENTRE></div>
+    <br><br>
+    <div class="grid-container" >
+        <br><br>
+        <div class="grid-item-box">
+            <br>
+            <center><h1> Places</h1></center>
+            <br>
+            <ul>
+                <a href="/taj"><h2><li>India</h2> </li></a>
+                <h2><li>Brazil</h2> </li>
+                <h2><li>China</h2> </li>
+                <h2><li>Italy</h2> </li>
+                <h2><li>USA </h2></li>
+                <h2><li>Australia</h2> </li>
+                <br>
+            </ul>  
+        </div>
+        <div class="grid-item">
+            <img src="{{ url_for('static', filename='images/map.png') }}" usemap="#worldmap">
+            <map name="worldmap">
+                <area target="Taj" alt="tajmahal" title="Agra" href="/taj" coords="400,209,596,590"  shape="rect"> 
+            </map>
+        </div>   
+    </div>
+    <div class="comment-box">
+        <h1>Leave a Comment</h1>
+        {% include "comment.html" %}
+      </div>
+      <section class="footer">
+        <h2>Follow on</h2>
+        <div class="icons">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+        </div>  
+      </section>
+</body>
+</html>

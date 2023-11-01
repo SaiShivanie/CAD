@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gallery</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/gallery_styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nav_footer_style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/logo.png') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel='stylesheet'>
+</head>
+<body>
+</div>
+<section class="header1">
+    <nav>
+           <div class="nav-links"id="navLinks">
+                 <ul>
+                       <li><a href="/">HOME</a></li> 
+                       <li><a href="/travel">STORIES</a></li>
+                       <li><a href="/guide">TRIPS&GUIDES</a></li>
+                       <li><a href="/gallery">GALLERY</a></li>
+                       <li><a href="CON.html">CONTACT</a></li>
+                 </ul>
+           </div>
+   </nav>
+</section> 
+<br>
+<br>
+<br>
+
+<section>
+    <div>
+        <h2 class="sub-heads">Stunnig Photography of Various Places</h2> 
+    </div>
+</section>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="{{ url_for('static', filename='images/place1.jpg') }}">
+      <img src="{{ url_for('static', filename='images/place1.jpg') }}"  width="600" height="400">
+    </a>
+    <div class="desc">Taj Mahal - India</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="{{ url_for('static', filename='images/place2.jpg') }}">
+      <img src="{{ url_for('static', filename='images/place2.jpg') }}"  width="600" height="400">
+    </a>
+    <div class="desc">Red fort - India</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="{{ url_for('static', filename='images/place3.jpg') }}">
+      <img src="{{ url_for('static', filename='images/place3.jpg') }}"  width="600" height="400">
+    </a>
+    <div class="desc">Varanasi - India</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="{{ url_for('static', filename='images/place4.jpg') }}">
+      <img src="{{ url_for('static', filename='images/place4.jpg') }}"  width="600" height="400">
+    </a>
+    <div class="desc">Kerala - India</div>
+  </div>
+</div>
+<div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="{{ url_for('static', filename='images/place5.jpg') }}">
+        <img src="{{ url_for('static', filename='images/place5.jpg') }}"  width="600" height="400">
+      </a>
+      <div class="desc">Niagra Falls - Canada </div>
+    </div>
+  </div>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="{{ url_for('static', filename='images/place6.jpg') }}">
+        <img src="{{ url_for('static', filename='images/place6.jpg') }}"  width="600" height="400">
+      </a>
+      <div class="desc">Whistler Ski Resort - Canada </div>
+    </div>
+  </div>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="{{ url_for('static', filename='images/place7.jpg') }}">
+        <img src="{{ url_for('static', filename='images/place7.jpg') }}"  width="600" height="400">
+      </a>
+      <div class="desc">Moraine Lake - Canada</div>
+    </div>
+  </div>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="{{ url_for('static', filename='images/place8.jpg') }}">
+        <img src="{{ url_for('static', filename='images/place8.jpg') }}"  width="600" height="400">
+      </a>
+      <div class="desc">Okanagan Valley - Canada</div>
+    </div>
+  </div>
+
+<div class="clearfix"></div>
+
+<div class="comment-box">
+    <h1>Leave a Comment</h1>
+     {% include "comment.html" %}
+ </div>
+
+
+
+<!--------- Footer ---------->
+
+<section class="footer">
+
+     <h2>Follow on</h2>
+     <div class="icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+</div>
+
+</section>
+
+</body>
+</html>
+
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taj</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/logo.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style1.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nav_footer_style.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel='stylesheet'>
+</head>
+<body>
+    <section class="header">
+        <nav>
+               <div class="nav-links"id="navLinks">
+                     <ul>
+                        <li><a href="/">HOME</a></li> 
+                        <li><a href="/travel">STORIES</a></li>
+                        <li><a href="/guide">TRIPS&GUIDES</a></li>
+                        <li><a href="/gallery">GALLERY</a></li>
+                        <li><a href="CON.html">CONTACT</a></li>
+                     </ul>
+               </div>
+       </nav>
+    </section>
+    <div class="divimg"> 
+        <center><img src="{{ url_for('static', filename='images/taj_im.jpeg') }}" alt="Description of the image"></center>
+        <div class="image-text"><h1><b>TAJMAHAL</b><h1></div>
+    </div>
+
+    <div class="box">
+        <p>My travel mates and I were actually more willing to skip the Taj than you might imagine. The draw of the classic “sightseeing” destination is not particularly strong for me, or my friends, for whatever reason. I don’t travel to “say I’ve been there” or show people pictures of myself in front of some monument. But seriously, the Taj Mahal is one of those works of genius that when you actually experience it in person you finally get it. You get why you’ve seen pictures of this place since you were a kid; you get why millions of people come here every year; you get why it’s a UNESCO World Heritage Site and on the New Seven Wonders of the World list. I felt the same way when I saw Michelangelo’s David in Florence.</p>
+    </div>
+    <div class="box">
+        <p>The ticket for the Taj Mahal is 750INR ($14), which is probably the most I spent on any one thing in the whole country! (Make sure you go to the legit ticket-counter, because, like New Delhi, Agra is teeming with hustlers). Entry to the grounds is easy, and within a few minutes you’re walking through the red sandstone outer walls of the compound, with the Taj still out of site. The Great Gate (Darwaza-i rauza) that leads to the gardens surrounding the Taj Mahal is impressive in itself, made of red sandstone with intricate marble work, imposing archways, and domed Chhatris on the top corners. Not a bad entry-way! For a second there I forgot what what we had gone there to see.</p>
+    </div>
+    <br><br>
+    <div class="div1d1"><CENTRE><h1>FOOD<br></h1></CENTRE></div>
+    <div class="image-container" >
+        <img style="width: 100%;" src="{{ url_for('static', filename='images/travel_food.jpg') }}" alt="Description of the image">
+        <center><h2> {{ data[0].get('FOOD') }}</h2></center>
+    </div>
+    <div class="left-section">
+        <div class="box1">
+            <p>Many people whisper to each other to visit the rooftop coffee Hotel Saniya, because here, you can see the Taj Mahal from afar. Nice Trip! </p>
+        </div>
+        <br>
+        <div class="box1">
+            <p>Hotel Saniya serves drinks and meat dishes, mainly chicken. But looking at the piece of chicken dyed red with curry is not very attractive.</p>
+        </div> 
+        <br>
+        <div class="box1">
+        <p>Sipping a cup of coffee, sitting on the windy roof watching 1 of the 7 wonders of the world is a very wonderful feeling that you should experience.</p>  
+        </div>
+        <br>
+    </div>
+    <div class="right-section">
+        <br>
+        <br><br><br><br>
+        <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113579.63882792312!2d77.89761101002229!3d27.176303143521412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39747121d702ff6d%3A0xdd2ae4803f767dde!2sTaj%20Mahal!5e0!3m2!1sen!2sin!4v1698765200126!5m2!1sen!2sin" width="700" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+    </div>
+    <div class="clearfix"></div>
+        <br><br>
+    
+    <div class="div1d1"><CENTRE><h1>RESIDENCE<br></h1></CENTRE></div>
+    <div class="image-container">
+        <img src="{{ url_for('static', filename='images/hotel.jpg') }}" alt="Description of the image">
+        <center><h2>{{ data[0].get('RESIDENCE') }}</h2></center>
+    </div>
+    <div class="box2">
+        <p>I was booked into a bed room at the Grand Imperial - Heritage Hotel. The room was spacious and tastefully decorated with notable design elements or furnishings. It came with  special amenities, like 'a private balcony with a view' or 'a cozy fireplace'.The view from this place is amazing. </p>
+    </div>
+    <div class="box2">
+        <p>The bed was incredibly comfortable, ensuring a good night's sleep.The cleanliness of the room and the entire property was impeccable. The staff took great care to ensure a comfortable and hygienic environment. The plush bedding and soft linens made for a cozy retreat after a day of exploration.</p>
+    </div>
+    <br><br>
+    <div class="comment-box">
+        <h1>Leave a Comment</h1>
+        {% include "comment.html" %}
+      </div>
+      <section class="footer">
+         <h2>Follow on</h2>
+         <div class="icons">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+      </div>
+      </section>  
+</body>
+</html>

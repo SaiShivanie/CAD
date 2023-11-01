@@ -1,0 +1,103 @@
+.divimg img{
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+.image-text {
+  position: absolute;
+  top: 25%; /* Adjust the top value to position the text vertically */
+  left: 50%; /* Adjust the left value to position the text horizontally */
+  transform: translate(-50%, -50%); /* Center the text both vertically and horizontally */
+  color:black; /* Text color */
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.box{
+width: 500px;
+height: 370px;
+margin-left: 120px;
+margin-top: 40px;
+background-color: #E3F4F4;
+display: inline-block; /* Display boxes inline */
+border-radius: 10px;
+transition: background-color 0.3s;
+}
+
+.box1{
+  width: 300px;
+  height: 270px;
+  margin-left: 120px;
+  margin-top: 40px;
+  background-color: #E3F4F4;
+  display: inline-block; /* Display boxes inline */
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.box1 p {
+  padding: 40px; /* Add padding to the text within the box */
+  font-size:larger;
+}
+
+.box2{
+  width: 500px;
+  height: 220px;
+  margin-left: 120px;
+  margin-top: 40px;
+  background-color: #E3F4F4;
+  display: inline-block; /* Display boxes inline */
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+.box2 p {
+  padding: 40px; /* Add padding to the text within the box */
+  font-size:larger;
+}
+.box:hover {
+  background-color: #C4DFDF; /* Change the background color on hover */
+}
+
+.box p {
+  padding: 40px; /* Add padding to the text within the box */
+  font-size:larger;
+}
+.image-container img {
+  max-width: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+.div1d1
+{
+  text-align: center;
+  padding: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color:black;
+  font-size: 20pt;
+  background-color: #C4DFDF;
+  
+}
+.image-text h1{
+text-align: center;
+  padding: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color:black;
+  font-size: 35pt;
+}.left-section {
+  width: 30%; /* Set the width for the left section */
+  float: left; /* Float the left section to the left */
+}
+.right-section {
+  width: 70%; /* Set the width for the right section */
+  float: left; /* Float the right section to the left */
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}

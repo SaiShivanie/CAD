@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+         <title>Personal Travel Vlog</title>
+         <link rel="stylesheet" href="{{ url_for('static', filename='css/home_styles.css') }}">
+         <link rel="stylesheet" href="{{ url_for('static', filename='css/nav_footer_style.css') }}">
+         <link rel="icon" href="{{ url_for('static', filename='images/logo.png') }}">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body> 
+      
+        <section class="header">
+              <nav> 
+                     <div class="nav-links"id="navLinks">
+                           <ul>
+                            <li><a href="/">HOME</a></li> 
+                       <li><a href="/travel">STORIES</a></li>
+                       <li><a href="/guide">TRIPS&GUIDES</a></li>
+                       <li><a href="/gallery">GALLERY</a></li>
+                       <li><a href="CON.html">CONTACT</a></li>
+                           </ul>
+                     </div>
+             </nav>
+             </br>
+</section> 
+
+<!-------- Sec -------->
+
+ <section class="sec">
+        <h1>Explore the World, One Adventure at a Time!</h1>
+        <div class="row">
+              <div class="sec-col">
+                    <p>Hello and welcome to my travel diary! I'm a passionate wanderer, and I'm thrilled to have you join me on this incredible journey through some of the world's most mesmerizing destinations.Ever since I took my first step out into the world, I've been captivated by the beauty of diverse cultures, breathtaking landscapes, and the stories each destination has to tell.</p>
+             </div>
+             <div class="sec-col">
+                    <p>Traveling isn't just a hobby for me; it's a way of life. Whether I'm hiking through lush rainforests, savoring street food in bustling markets, or exploring ancient ruins, each adventure fuels my wanderlust even more.</p>
+             </div>
+             <div class="sec-col">
+                    <p>you can expect a treasure trove of travel tales, practical tips, and vivid photography that will inspire your own wanderlust. I'm dedicated to sharing not only the picturesque moments but also the authentic experiences that make each journey memorable.So, whether you're an avid globetrotter or simply dreaming of your next adventure, my goal is to inspire and guide you on your path to exploration.</p>
+             </div>
+        </div>
+ </section>
+
+<!-------- blog expect-------->
+
+ <section class="blog-expect">
+        <h1>What to Expect from My Blog!</h1>
+
+        <div class="row">
+               <div class="blogex-col">
+                      <img src="{{ url_for('static', filename='images/stpic.jpeg') }}">
+                      <div class="layer">
+                             <h4>Stunning Photography</h4>
+                      </div>
+               </div>
+               <div class="blogex-col">
+                      <img src="{{ url_for('static', filename='images/foodie.jpg') }}">
+                      <div class="layer">
+                             <h4>Foodie Adventures</h4>
+                      </div>
+               </div>
+              <div class="blogex-col">
+                      <img src="{{ url_for('static', filename='images/int com.jpeg') }}">
+                      <div class="layer">
+                             <h4>Interactive Community</h4>
+                      </div>
+               </div>
+       </div>
+
+</section>
+
+<!-------- BlogPosts -------->
+
+ <section class="posts">
+         <h1>Latest Blog Posts</h1>
+          <div class="row">
+                 <div class="dest-col">
+                        <img src="{{ url_for('static', filename='images/aus.jpg') }}">
+                        <h5>Australia</h5>
+                        <p>Australia, a captivating destination nestled between the Pacific and Indian oceans, stands as the largest country in Oceania and the sixth-largest in the world. This enchanting land beckons travelers with its remarkable array of natural wonders, unique wildlife, multicultural cities, sun-kissed beaches, and rich original heritage.</p>
+                 </div>
+                 <div class="dest-col">
+                        <img src="{{ url_for('static', filename='images/eiffel.jpg') }}">
+                        <h5>Paris</h5>
+                        <p>Paris has a way of romancing visitors. The love affair might begin with a first glimpse of the Eiffel Tower, then continue with strolls along the wide tree-lined avenues and in lavish formal gardens.The city is seductively beautiful.In every hidden corner and at all the famous sites, Paris casts a spell of enchantment. One visit may inspire a lifelong passion.</p>
+                 </div>
+                 <div class="dest-col">
+                        <img src="{{ url_for('static', filename='images/agra.jpg') }}">
+                        <h5>Agra</h5>
+                        <p>Agra is one of India s most visited cities; best known for its Mughal history, housing one of the Seven World Wonders, and being the third apex in the  Golden Triangle . While you may be tempted to tag Agra onto your India itinerary as a day trip from Delhi, the city deserves more than just a passing glance.Located on the banks of Yamuna, Agra is best known for the iconic Taj Mahal.</p>
+                 </div>
+        </div>
+           
+
+ </section>
+
+<!--------- testimonials ---------->
+
+ <section class="testimonials">
+        <h1>Testimonials</h1>
+        <div class="row">
+              <div class="testimonial-col">
+                    <div>
+                           <p>I stumbled upon your blog when I was feeling stuck in my daily routine.Your travel stories and beautiful photography rekindled my passion for exploring the world. Reading this blog is like taking a mini-vacation every day!".</p>
+                           <h6>Christine Berkley</h6>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                    </div>
+              </div>
+              <div class="testimonial-col">
+                    <div>
+                           <p>"Your travel blog is a refreshing departure from the cookie-cutter travel guides out there. The personal touch and genuine storytelling make me feel like I'm right there with them on their adventures. Keep sharing your unique perspective!".</p>
+                           <h6>David Byer</h6>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star-half-o"></i>
+                    </div>
+              </div>
+        </div>
+ 
+ </section>
+
+
+<!--------- Comment box ---------->
+
+
+
+    <div class="comment-box">
+       <h1>Leave a Comment</h1>
+        {% include "comment.html" %}
+    </div>
+
+   
+
+<!--------- Footer ---------->
+
+ <section class="footer">
+
+        <h2>Follow on</h2>
+        <div class="icons">
+               <i class="fa-brands fa-instagram"></i>
+               <i class="fa-brands fa-facebook"></i>
+               <i class="fa-brands fa-linkedin"></i>
+               <i class="fa-brands fa-twitter"></i>
+               <i class="fa-brands fa-youtube"></i>
+ </div>
+
+</section>
+</body>
+</html>
